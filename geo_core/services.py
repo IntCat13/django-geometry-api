@@ -2,7 +2,7 @@ from django.contrib.gis.geos import LineString as DLineString
 from .models import LineString
 
 def join_lines(line_ids):
-    lines = LineString.objects.filter(id__in=line_ids)
+    lines = LineString.objects.filter(id__in=line_ids).order_by('id')
     if not lines.exists():
         return None, 'No lines found with provided IDs'
 
