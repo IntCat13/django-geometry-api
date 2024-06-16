@@ -1,33 +1,35 @@
-# Byte-compiled  optimized  DLL files
-__pycache__
-.py[cod]
-$py.class
+# Byte-compiled / optimized / DLL files
+__pycache__/
+geo_api/__pycache__/
+geo_core/__pycache__/
+*.py[cod]
+*$py.class
 
 # C extensions
-.so
+*.so
 
-# Django stuff
-.log
-.pot
-.pyc
-.pyo
-.sqlite3
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
 db.sqlite3
-media
+media/
 
-# exclude the static directory
-staticfiles
+# exclude the "static" directory:
+staticfiles/
 
 # Ignore the file that contains the secret key
 .env
 
 # Ignore local PostgreSQL databases
-.sql
-.psql
+*.sql
+*.psql
 
 # Ignore Docker files
-.dbdata
-dbdata
+*.dbdata
+dbdata/
 
 # Ignore Docker Compose override file
 docker-compose.override.yml
@@ -36,54 +38,54 @@ docker-compose.override.yml
 local_settings.py
 
 # Ignore virtual environment directories
-venv
-ENV
+venv/
+ENV/
 
 # Ignore macOS system files
 .DS_Store
 
 # Ignore Python egg info directories
-.egg-info
+*.egg-info/
 
 # Ignore build and dist directories
-build
-dist
+build/
+dist/
 
 # Ignore coverage reports
-htmlcov
+htmlcov/
 .coverage
-.coverage.
+.coverage.*
 .cache
 nosetests.xml
 coverage.xml
-.cover
-.py,cover
-.hypothesis
+*.cover
+*.py,cover
+.hypothesis/
 
 # Ignore pytest cache
-.pytest_cache
+.pytest_cache/
 
 # Ignore Jupyter Notebook checkpoints
-.ipynb_checkpoints
+.ipynb_checkpoints/
 
 # Ignore SQLAlchemy-migrate repository
-migrate_repo
+migrate_repo/
 
 # Ignore Sphinx documentation
-docs_build
+docs/_build/
 
 # Ignore distribution packages
-.egg
-.egg-info
-dist
-eggs
-parts
-sdist
-var
-.log
+*.egg
+*.egg-info/
+dist/
+eggs/
+parts/
+sdist/
+var/
+*.log
 
 # Ignore static files
-static
+static/
 
 # Ignore media files
-media
+media/
