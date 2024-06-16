@@ -1,5 +1,10 @@
-from django.http import HttpResponse
+from rest_framework import viewsets
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from rest_framework import status
+from .models import Point
+from .serializers import PointSerializer
 
-
-def index(request):
-    return HttpResponse("Hello world!")
+class PointViewSet(viewsets.ModelViewSet):
+    queryset = Point.objects.all()
+    serializer_class = PointSerializer
