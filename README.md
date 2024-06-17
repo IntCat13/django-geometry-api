@@ -27,6 +27,10 @@ Build and start the Docker containers:
 make init
 ```
 
+> [!WARNING]  
+> Change "docker-compose" to "docker compose" in Makefile if you have an error:
+> ```DOCKER_COMPOSE := docker-compose ```
+
 ## Usage
 
 To start the development environment with live reloading, use:
