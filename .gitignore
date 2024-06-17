@@ -1,0 +1,102 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+geo_api/__pycache__/
+geo_core/__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Django stuff:
+*.log
+*.pot
+*.pyc
+*.pyo
+*.sqlite3
+db.sqlite3
+media/
+
+# exclude the "static" directory:
+staticfiles/
+
+# Ignore the file that contains the secret key
+.env
+
+# Ignore local PostgreSQL databases
+*.sql
+*.psql
+
+# Ignore Docker files
+*.dbdata
+dbdata/
+
+# Ignore Docker Compose override file
+docker-compose.override.yml
+
+# Ignore all local environment settings
+local_settings.py
+
+# Ignore virtual environment directories
+venv/
+ENV/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Python egg info directories
+*.egg-info/
+
+# Ignore build and dist directories
+build/
+dist/
+
+# Ignore coverage reports
+htmlcov/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Ignore pytest cache
+.pytest_cache/
+
+# Ignore Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Ignore SQLAlchemy-migrate repository
+migrate_repo/
+
+# Ignore Sphinx documentation
+docs/_build/
+
+# Ignore distribution packages
+*.egg
+*.egg-info/
+dist/
+eggs/
+parts/
+sdist/
+var/
+*.log
+
+# Ignore static files
+static/
+
+# Ignore media files
+media/
+geo_api/__pycache__/__init__.cpython-39.pyc
+geo_api/__pycache__/settings.cpython-39.pyc
+geo_api/__pycache__/urls.cpython-39.pyc
+geo_api/__pycache__/wsgi.cpython-39.pyc
+geo_core/__pycache__/__init__.cpython-39.pyc
+geo_core/__pycache__/admin.cpython-39.pyc
+geo_core/__pycache__/apps.cpython-39.pyc
+geo_core/__pycache__/models.cpython-39.pyc
+geo_core/__pycache__/urls.cpython-39.pyc
+geo_core/__pycache__/views.cpython-39.pyc
+geo_core/migrations/__pycache__/__init__.cpython-39.pyc
