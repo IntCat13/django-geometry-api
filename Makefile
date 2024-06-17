@@ -6,19 +6,20 @@ RED := \033[0;31m
 BLUE := \033[0;34m
 NO_COLOR := \033[0m
 DOCKER_COMPOSE := docker-compose
-MANAGE_PY := docker-compose exec web python manage.py
+MANAGE_PY := $(DOCKER_COMPOSE) exec web python manage.py
 
 init: ## Initialize the environment
-	@echo "$(BLUE)Stopping and removing containers...$(NO_COLOR)"
+	@echo "$(GREEN)Stopping and removing containers...$(NO_COLOR)"
 	@$(DOCKER_COMPOSE) down -v
-	@echo "$(BLUE)Building and starting containers...$(NO_COLOR)"
+	@echo "$(GREEN)Building and starting containers...$(NO_COLOR)"
 	@$(DOCKER_COMPOSE) up --build -d
-	@echo "$(BLUE)Running makemigrations...$(NO_COLOR)"
+	@echo "$(GREEN)Running makemigrations...$(NO_COLOR)"
 	@$(MANAGE_PY) makemigrations geo_core
-	@echo "$(BLUE)Running migrations...$(NO_COLOR)"
+	@echo "$(GREEN)Running migrations...$(NO_COLOR)"
 	@$(MANAGE_PY) migrate
-	@echo "$(BLUE)Running tests...$(NO_COLOR)"
+	@echo "$(GREEN)Running tests...$(NO_COLOR)"
 	@$(MANAGE_PY) test
+	@echo "$(GREEN)Api is running in background (use docker-compose logs -f to see logs)$(NO_COLOR)"
 
 dev: ## Start the development environment
 	@echo "$(GREEN)Starting development environment...$(NO_COLOR)"
